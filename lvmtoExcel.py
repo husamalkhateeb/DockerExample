@@ -33,13 +33,7 @@ def split_and_combine(input_file):
     pass
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python script.py <input_file>")
-        sys.exit(1)
-
     input_file = sys.argv[1]
-    if not os.path.isfile(input_file):
-        print("Input file does not exist.")
-        sys.exit(1)
+
 
     split_and_combine(input_file)
